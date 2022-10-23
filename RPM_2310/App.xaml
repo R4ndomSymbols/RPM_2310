@@ -1,0 +1,16 @@
+﻿<Application x:Class="RPM_2310.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RPM_2310"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate x:Key="phone_template">
+            <StackPanel>
+                <TextBlock Text="Название"/>
+                <TextBlock Text="{Binding Path = Name}"/>
+                <TextBlock Text="Телефон"/>
+                <TextBlock Text="{Binding Path=PhoneNumber}"/>
+            </StackPanel>
+        </DataTemplate> 
+    </Application.Resources>
+</Application>
